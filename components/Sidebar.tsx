@@ -16,7 +16,7 @@ const Sidebar = () => {
         {sidebarLinks.map((link) => {
           const isActive =
   pathname === link.route ||
-  (link.route !== '/' && pathname.startsWith(link.route));
+  (link.route !== '/' && pathname.startsWith(`${link.route}/`));
 
 
           return (
@@ -26,7 +26,7 @@ const Sidebar = () => {
               aria-current={isActive ? 'page' : undefined}
               className={cn(
                 'flex items-center gap-4 p-4 rounded-lg justify-start hover:bg-dark-2 transition',
-                { 'bg-blue-1': isActive }
+                { 'bg-blue-500': isActive }
               )}
             >
 

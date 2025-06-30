@@ -18,6 +18,9 @@ const config: Config = {
       },
     },
     extend: {
+       backgroundImage: {
+        hero: "url('/images/hero-background.png')",
+      },
       colors: {
   'dark-1': '#1C1F2E',
   'dark-2': '#161925',
@@ -46,9 +49,7 @@ const config: Config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
-      backgroundImage: {
-        hero: "url('/images/hero-background.png')",
-      },
+     
     },
   },
   plugins: [require('tailwindcss-animate')],
