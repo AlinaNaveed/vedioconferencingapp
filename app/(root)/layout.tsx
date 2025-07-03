@@ -1,13 +1,27 @@
-import React, { ReactNode } from 'react'
+
+import { Toaster } from '@/components/ui/sonner';
+import React, { ReactNode } from 'react';
+import StreamClientProvider from '@/providers/StreamClientProvider';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "YoOm",
+  description: "Video calling app",
+  icons:{
+    icon:'icons/logo.svg'
+  }
+};
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <main>
-        
-      { children }
-        
-    </main>
-  )
-}
+      <StreamClientProvider>
+        {children}
+      </StreamClientProvider>
+      
 
-export default RootLayout
+    </main>
+  );
+};
+
+export default RootLayout;

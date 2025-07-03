@@ -10,6 +10,7 @@ const config: Config = {
   ],
 
   theme: {
+  
     container: {
       center: true,
       padding: '2rem',
@@ -18,9 +19,6 @@ const config: Config = {
       },
     },
     extend: {
-       backgroundImage: {
-        hero: "url('/images/hero-background.png')",
-      },
       colors: {
   'dark-1': '#1C1F2E',
   'dark-2': '#161925',
@@ -34,6 +32,7 @@ const config: Config = {
   'purple-1': '#830EF9',
   'yellow-1': '#F9A90E',
 },
+
 
       keyframes: {
         'accordion-down': {
