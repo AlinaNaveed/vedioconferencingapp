@@ -1,5 +1,3 @@
-
-import { Toaster } from '@/components/ui/sonner';
 import React, { ReactNode } from 'react';
 import StreamClientProvider from '@/providers/StreamClientProvider';
 import { Metadata } from 'next';

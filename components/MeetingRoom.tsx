@@ -5,14 +5,12 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { LayoutList, Users } from 'lucide-react'
 import { Button } from './ui/button'
 import { useRouter, useSearchParams } from 'next/navigation'
-import personalRoom from '@/app/(root)/(home)/personal-room/page'
 import EndCallButton from './EndCallButton'
 import Loader from './Loader'
 
