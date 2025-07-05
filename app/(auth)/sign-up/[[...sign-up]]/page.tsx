@@ -8,16 +8,12 @@ const SignUpPage = () => {
         appearance={{
           baseTheme: dark,
           elements: {
-            // Input fixes
             formFieldInput: 'text-black bg-white placeholder-black',
-
-            // Button override using inline styles
-            formButtonPrimary: undefined, // Remove Tailwind class override
+            formButtonPrimary: undefined, 
           },
           variables: {
-            colorPrimary: '#2563eb', // ✅ Tailwind's blue-600
-            colorTextOnPrimaryBackground: '#ffffff', // white button text
-          },
+            colorPrimary: '#2563eb', 
+            colorTextOnPrimaryBackground: '#ffffff', 
         }}
         />
     </main>
